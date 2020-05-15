@@ -1,0 +1,12 @@
+<resources>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新数据</string>
+    <string name="refresh_succeed">刷新数据成功</string>
+    <string name="refresh_fail">刷新数据失败</string>
+    <string name="pull_up_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="is_loading">正在加载数据</string>
+    <string name="load_succeed">加载数据成功</string>
+    <string name="load_fail">加载数据失败</string>
+</resources>

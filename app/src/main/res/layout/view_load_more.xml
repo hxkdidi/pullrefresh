@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadmore_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey12">
+
+    <RelativeLayout
+        android:id="@+id/load_foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.ken.pullview.indicator.LoadingIndicatorView
+                android:id="@+id/load_progress"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:indicator="BallPulse"
+                app:indicator_color="@color/theme_color"
+                app:indicator_size="20" />
+
+            <TextView
+                android:id="@+id/load_state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pull_up_to_load"
+                android:textColor="@color/grey08"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNoMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:text="没有更多数据了"
+            android:textColor="@color/grey08"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>
